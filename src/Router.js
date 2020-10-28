@@ -15,9 +15,9 @@ const Router = () => {
           component={CityList}
           options={{headerShown: false}}
         /> */}
-        {/* <Stack.Screen name={'Home'} component={Home} />
-        <Stack.Screen name={'About'} component={About} /> */}
-        <Stack.Screen name={'Services'} component={Services} />
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="About" component={About} />
+        <Stack.Screen name="Services" component={Services} />
       </Stack.Navigator>
     </NavigationContainer>
   );

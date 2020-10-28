@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 
 const Navigation = (props) => {
+  console.log('props', props);
   return (
     <View style={styles.container}>
       <View style={styles.header}>
