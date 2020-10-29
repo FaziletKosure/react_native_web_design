@@ -1,11 +1,11 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import {Navigation, Subscribe, Footer} from '../components';
+import {Navig, Subscribe, Footer} from '../components';
 
 const Services = () => {
   return (
     <View>
-      <Navigation />
+      <Navig />
       <Subscribe />
       <Footer />
     </View>

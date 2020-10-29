@@ -1,4 +1,5 @@
 import React from 'react';
+import {useNavigation} from '@react-navigation/native';
 import {
   StyleSheet,
   Text,
@@ -7,8 +8,9 @@ import {
   Dimensions,
 } from 'react-native';
 
-const Navigation = (props) => {
+const Navig = (props) => {
   console.log('props', props);
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -16,13 +18,13 @@ const Navigation = (props) => {
         <Text style={[styles.text, {color: 'white'}]}>Web Design</Text>
       </View>
       <View style={styles.nav}>
-        <TouchableOpacity onPress={() => props.navigation.navigate('Home')}>
+        <TouchableOpacity onPress={() => navigation.navigate('HomePage')}>
           <Text style={styles.navText}>HOME</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => props.navigation.navigate('About')}>
+        <TouchableOpacity onPress={() => navigation.navigate('AboutPage')}>
           <Text style={styles.navText}>ABOUT</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => props.navigation.navigate('Services')}>
+        <TouchableOpacity onPress={() => navigation.navigate('ServicesPage')}>
           <Text style={styles.navText}>SERVICES</Text>
         </TouchableOpacity>
       </View>
@@ -30,7 +32,7 @@ const Navigation = (props) => {
   );
 };
 
-export {Navigation};
+export {Navig};
 
 const styles = StyleSheet.create({
   container: {

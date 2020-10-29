@@ -9,12 +9,12 @@ import {
 } from 'react-native';
 import {bounce} from 'react-native/Libraries/Animated/src/Easing';
 
-import {Navigation, Subscribe, Footer} from '../components';
+import {Navig, Subscribe, Footer} from '../components';
 
 const Home = () => {
   return (
     <ScrollView style={{flex: 1}} bounce={true}>
-      <Navigation />
+      <Navig />
       <ImageBackground
         style={{
           height: Dimensions.get('window').height / 3,

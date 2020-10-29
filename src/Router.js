@@ -6,7 +6,7 @@ import {Home, About, Services} from './pages';
 
 const Stack = createStackNavigator();
 
-const Router = () => {
+const Router = (props) => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -15,9 +15,9 @@ const Router = () => {
           component={CityList}
           options={{headerShown: false}}
         /> */}
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="About" component={About} />
-        <Stack.Screen name="Services" component={Services} />
+        <Stack.Screen name="HomePage" component={Home} />
+        <Stack.Screen name="AboutPage" component={About} />
+        <Stack.Screen name="ServicesPage" component={Services} />
       </Stack.Navigator>
     </NavigationContainer>
   );
