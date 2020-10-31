@@ -6,7 +6,7 @@ const About = () => {
   return (
     <View>
       <Navig />
-      <Text>Fazilet</Text>
+
       <Subscribe />
       <Footer />
     </View>
